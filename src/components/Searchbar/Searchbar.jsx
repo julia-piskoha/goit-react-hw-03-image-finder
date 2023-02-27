@@ -1,5 +1,6 @@
 import React from 'react';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import css from './Searchbar.module.css';
 
 export default class Searchbar extends React.Component {
@@ -12,7 +13,7 @@ export default class Searchbar extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     if (this.state.imageName.trim() === '') {
-      toast('Enter a request');
+      toast.error('Enter a request');
       return;
     }
     this.props.onSubmit(this.state.imageName);

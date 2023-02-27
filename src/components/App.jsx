@@ -1,5 +1,6 @@
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Searchbar from './Searchbar/Searchbar';
 
 export default class App extends React.Component {
@@ -13,7 +14,7 @@ export default class App extends React.Component {
     return (
       <>
         <Searchbar onSubmit={this.handleFormSubmit} />;
-        <ToastContainer autoClose={3000} />;
+        <ToastContainer autoClose={2000} />;
       </>
     );
   }
