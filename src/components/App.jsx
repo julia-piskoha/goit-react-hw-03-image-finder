@@ -6,6 +6,7 @@ import Searchbar from './Searchbar/Searchbar';
 export default class App extends React.Component {
   state = {
     imageName: '',
+    images: [],
   };
   handleFormSubmit = imageName => {
     this.setState({ imageName });
