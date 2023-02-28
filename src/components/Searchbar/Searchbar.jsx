@@ -1,6 +1,6 @@
 import React from 'react';
-import { toast } from 'react-toastify';
 import { ImSearch } from 'react-icons/im';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import css from './Searchbar.module.css';
 
@@ -26,7 +26,6 @@ export default class Searchbar extends React.Component {
         <form onSubmit={this.handleSubmit} className={css.form}>
           <button type="submit" className={css.button}>
             <ImSearch className={css.button_label} />
-            Search
           </button>
 
           <input
